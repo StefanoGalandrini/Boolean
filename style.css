@@ -1,0 +1,94 @@
+body{ /* definizione sfondo e font */
+    width: 1900px;
+    position: relative;
+    background: url(img/background.jpg) no-repeat top center;
+    background-size: cover;
+    font-family:'Questrial', sans-serif;
+    line-height: 0.2em;
+}
+
+main{ /* definizione fondo nero trasparente */
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    width: 1200px;
+    border-radius: 20px;
+    margin: 30px auto 0px auto;
+    padding-bottom: 100px;
+}
+
+nav{ /* attributi barra dei pulsanti */
+    display: block;
+    background-color: #00dd00;
+    width: 1000px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 10px 100px 35px;
+}
+
+ul{ /* lista allineata con il testo */
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#logo{ /* dimensioni e centratura logo */
+    display: block;
+    width: 250px;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#titolo{ /* dimensioni e centratura titolo */
+    text-align: center;
+    font-size: 25pt;
+    font-weight: 600;
+    color: #00dd00;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+#mezzi{ /* posizione e attributi testo dei mezzi di trasporto */
+    margin-left: 100px;
+    color: #ffffff;
+}
+
+#barra1{ /* dimensione e colore prima barra */
+    width: 350px; 
+    background-color: #F0B050;
+}    
+
+#barra2{ /* dimensione e colore seconda barra */
+    width: 600px; 
+    background-color: #50BB50;
+}    
+
+#barra3{  /* dimensione e colore terza barra */
+    width: 150px; 
+    background-color: #BE4141;
+}    
+
+p#barra1, p#barra2, p#barra3{ /* Proprietà comuni delle barre*/
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}    
+
+li span{ /* formattazione testo selettore <span> nella lista */
+    font-weight: 600;
+    font-size: 20pt;
+    margin-bottom: 5px;
+}    
+
+li p{ /* formattazione testo selettore <p> nella lista */
+    font-weight: 100;
+    font-size: 13pt;
+    line-height: 0.4em;
+    margin-bottom: 5px;
+}    
+
+.indirizzo:before{ /* Freccia prima di indirizzo */
+    content: "\21A6  ";
+}

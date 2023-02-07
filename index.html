@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Lim</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link al Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial">
+</head>
+
+<!-- 
+CRITERI
+
+- L'attributo "id" è usato quando compare in modo univoco.
+- L'attributo "class" è usato quando è assegnato a più elementi.
+- Il selettore <div> è usato solo come "contenitore" di più elementi.
+- Dovendo definire varie proprietà del testo (nel file .css) sono stati evitati 
+  i selettori <h1>, <h2> ecc. e sono stati usati solo i selettori <p> e <span>.
+-->
+
+<body> <!-- immagine di sfondo e tipo di font (indicati nel file .css) -->
+
+    <main> <!-- contenuto e fondo nero trasparente di lunghezza proporzionale al contenuto -->
+
+        <header> <!-- Logo e Titolo -->
+            <img id="logo" src="img/logo.png" alt="">
+            <p id="titolo">Taking Booleaners from A to B</p>
+        </header>
+
+        <nav> <!-- Barra dei pulsanti -->
+            <input type="submit" name="Prenota" value="Prenota">
+            <input type="submit" name="Termina" value="Termina Prenotazione">
+            <input type="submit" name="Luci" value="Accendi Luci">
+        </nav>
+
+        <ul id="mezzi"> <!-- Elenco Mezzi di Trasporto -->
+            <li> 
+                <div> <!-- selettori <div> usati invece di un'ulteriore <ul> per semplificare il codice -->
+                    <input type="checkbox">
+                    <span>Monopattino Gino22</span>
+                    <p class="indirizzo">Via Guadalamentri - a 220 metri da te</p>  <!-- usata classe per inserire il simbolo "freccia dx" dal file .css -->
+                    <p>Stato carica</p>
+                    <p id="barra1">&nbsp;</p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <input type="checkbox">
+                    <span>Monopattino Mike24</span>
+                    <p class="indirizzo">Via Ricciardoni - a 420 metri da te</p>  <!-- usata classe per inserire il simbolo "freccia dx" dal file .css -->
+                    <p>Stato carica</p>
+                    <p id="barra2">&nbsp;</p>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <input type="checkbox">
+                    <span>Monopattino Fede154</span>
+                    <p class="indirizzo">Via Mentarini - a 490 metri da te</p> <!-- usata classe per inserire il simbolo "freccia dx" dal file .css -->
+                    <p>Stato carica</p>
+                    <p id="barra3">&nbsp;</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
